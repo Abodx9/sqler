@@ -4,6 +4,10 @@ import csv
 from faker import Faker
 import json
 
+# of course can be modified , to specific country like
+# ('en_US') for USA , ('de_DE') for Germany, ('ar_SA') for Arabic ...etc.
+# check faker documentation
+
 fake = Faker()
 
 def color(text):
