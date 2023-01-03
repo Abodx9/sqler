@@ -68,11 +68,11 @@ if ch == 1:
     attri4 = input("Enter the fourth attribute's name: ")
     attri5 = input("Enter the fifth attribute's name: ")
 
-    fake1 = input("Enter the first thing to be generated that matches first attribute: ")
-    fake2 = input("Enter the second thing to be generated: ")
-    fake3 = input("Enter the third thing to be generated: ")
-    fake4 = input("Enter the fourth thing to be generated: ")
-    fake5 = input("Enter the fifth thing to be generated: ")
+    fake1 = input(f"What type of data, you want to generate for {attri1}: ")
+    fake2 = input(f"What type of data, you want to generate for {attri2}: ")
+    fake3 = input(f"What type of data, you want to generate for {attri3}: ")
+    fake4 = input(f"What type of data, you want to generate for {attri4}: ")
+    fake5 = input(f"What type of data, you want to generate for {attri5}: ")
 
     cfn = input("What do u want to call the csv file: ")
     rec = int(input("How many rows do u need: "))
