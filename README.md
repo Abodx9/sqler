@@ -1,4 +1,4 @@
-# Sqler
+# SQLer
 
 Yet another script that helps with generating fake data , and simple methods that can help you, while creating your first database.
 
