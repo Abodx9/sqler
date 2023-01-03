@@ -59,5 +59,4 @@ phone_number = to generate fake phone numbers
 user_agent  = to generate user agents , it will help somehow maybe 
 
 ==========================================
-
-For any questions, U can contact me via E-mail  (abodx@gmx.de)
+For more check faker
