@@ -1,0 +1,63 @@
+
+╔═╗┬ ┬┌─┐┌─┐┌─┐┬─┐┌┬┐┌─┐┌┬┐  ╔╦╗┌─┐┌┬┐┌─┐
+╚═╗│ │├─┘├─┘│ │├┬┘ │ ├┤  ││   ║║├─┤ │ ├─┤
+╚═╝└─┘┴  ┴  └─┘┴└─ ┴ └─┘─┴┘  ═╩╝┴ ┴ ┴ ┴ ┴
+
+==========================================
+use this names as it, in order to work
+
+first_name = To generate people first names
+
+last_name  = Same thing but for last names
+
+name_female = To generate only female names
+
+name_male   = Same but for men LOL
+
+name       = Here is to generate both names
+
+random_int = To generate random numbers, would be great choice for Primary keys
+
+date       = To generate date in this formate (1979-02-02)
+
+time       = Same as date but it generates timestamp, could be used for timestamp in postgres
+
+job        = The name say it all, it generates different Jobs
+
+city       = To generate different cities 
+
+country    = To generate countries, just like cities
+
+postcode   = To randomly generate postcodes
+
+street_name = To generate street names from a round the world
+
+street_address  = if u chose this one it will generate postcode with the street name
+
+iban        = this will generate bank's ibans
+
+swift       = can be used along side with iban, and this will generate swift codes
+
+color_name  = this will generate color names
+
+company     = To generate companies names
+
+company_suffix = will generate a suffix for ur company like Inc ,PLC and LLc ..etc
+
+currency_name  = will generate currency_names like euro , dollar and Rial ..etc
+
+ascii_email    = To generate different emails
+
+isbn13      = to generate isbn things, better to be used in libraries projects
+
+boolean   = obviously to generate True or False
+
+null_boolea  = same above but with new type: None
+
+phone_number = to generate fake phone numbers
+
+user_agent  = to generate user agents , it will help somehow maybe 
+
+==========================================
+
+For any questions, U can contact me via E-mail  (abodx@gmx.de)
