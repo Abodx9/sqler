@@ -44,4 +44,4 @@ or simply in Issues.
 - [ ] Insert data from csv File to your DB directly
 - [ ] Insert data from json File to your DB directly
 - [ ] Converter between MySql and PostgresSql
-- [ ]  Commands to control transactions.
+- [x]  Commands to control transactions (Commit&Rollback)
