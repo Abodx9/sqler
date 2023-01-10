@@ -12,9 +12,9 @@ import json
 fake = Faker()
 
 
-def connect(db, usr, pas, hostId):
+def connect(db, usr, pas, hostname):
     # starting new connection to your postgresSql's DataBase
-    connection = psycopg2.connect(dbname=db, user=usr, password=pas, host=hostId)
+    connection = psycopg2.connect(dbname=db, user=usr, password=pas, host=hostname)
     return connection
 
 
@@ -177,27 +177,47 @@ elif ch == 5:
     cursor = conn.cursor()
 
     while True:
-        try:
-            command = input("Enter Any Postgres_Sql command here: ")
+        print(color("""
+        Connected Successfully 
+-----------------------------------------
+                                        |
+1- Excute Commands (Select,Insert..)    |
+2- Commit changes                       |
+3- Rollback (do not save any changes)   |
+     Press any key to quit              |
+-----------------------------------------
 
-            # execute a statement
-            cursor.execute(command)
-            command_ret = cursor.fetchall()
-            print(command_ret)
-            print(cursor.statusmessage)
-            # close the cursor and connection
+"""))
+        chos = int(input("What is your Option: "))
 
-            again = input("Wanna keep excuting commands ?(Y/N)")
-            if again.lower() != "y":
+        if chos == 1:
+            try:
+                command = input("Enter Any Postgres_Sql command here: ")
+
+                # execute a statement
+                cursor.execute(command)
+                command_ret = cursor.fetchall()
+                print(command_ret)
+                print(cursor.statusmessage)
+                # close the cursor and connection
                 cursor.close()
-                conn.close()
-                break
 
-        except(Exception, psycopg2.DatabaseError) as error:
-            print(error)
+            except(Exception, psycopg2.DatabaseError) as error:
+                print(error)
+                break
+        elif chos == 2:
+            conn.commit()
+            conn.close()
             break
 
-    sys.exit(0)
+        elif chos == 3:
+            conn.rollback()
+            conn.close()
+            break
+
+        else:
+            print("Thanks for using this Tool")
+            sys.exit(0)
 
 elif ch == 6:
     input("\nThis option is coming soon...")
