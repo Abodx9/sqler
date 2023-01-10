@@ -21,6 +21,11 @@ To run the script you need to follow these steps:
 - Remove empty lines from csv
 - convert csv to json
 
+# 🆕
+- You can now connect to PostgresSql DB 😋
+- You can excute sql commands as well
+
+
 
 ## Feedback
 
@@ -31,3 +36,11 @@ or simply in Issues.
 
 [![Logo](https://www.sitesbay.com/sql/images/sql-command.png)](https://instabio.cc/21127nhPn3y)
 
+
+# 👨‍💻 To-do list
+
+- [x] Connect to the DataBase
+- [x] Excute Sql commands
+- [ ] Insert data from csv File to your DB directly
+- [ ] Insert data from json File to your DB directly
+- [ ] Converter between MySql and PostgresSql
