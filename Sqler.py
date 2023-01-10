@@ -171,7 +171,7 @@ elif ch == 5:
     dbname = input("Enter Your Database's name: ")
     usrname = input("Enter Your user name: ")
     usrpass = input("Enter your password: ")
-    host = input("Enter the database host: ")
+    host = input("Enter the database Hostname: ")
 
     conn = connect(dbname, usrname, usrpass, host)
     cursor = conn.cursor()
@@ -196,22 +196,26 @@ elif ch == 5:
 
                 # execute a statement
                 cursor.execute(command)
-                command_ret = cursor.fetchall()
-                print(command_ret)
+                if 'select' in command.lower():
+                    command_ret = cursor.fetchall()
+                    print(command_ret)
+
+
                 print(cursor.statusmessage)
                 # close the cursor and connection
-                cursor.close()
 
             except(Exception, psycopg2.DatabaseError) as error:
                 print(error)
                 break
         elif chos == 2:
             conn.commit()
+            cursor.close()
             conn.close()
             break
 
         elif chos == 3:
             conn.rollback()
+            cursor.close()
             conn.close()
             break
 
